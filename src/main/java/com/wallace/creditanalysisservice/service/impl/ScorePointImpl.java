@@ -2,9 +2,13 @@ package com.wallace.creditanalysisservice.service.impl;
 
 import com.wallace.creditanalysisservice.domain.Proposal;
 import com.wallace.creditanalysisservice.service.strategy.PointCalculator;
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
 
 import java.util.Random;
 
+@Order(2)
+@Component
 public class ScorePointImpl implements PointCalculator {
 
     @Override
